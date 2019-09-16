@@ -1,1 +1,0 @@
-打开项目敲击 “aagghhg| ffddssa|ggffdds| ggffdds|aagghhg |ffddssa”可以弹出小星星 仅仅支持pc
