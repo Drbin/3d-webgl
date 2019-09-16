@@ -337,12 +337,12 @@
         function(obj) {
             var mesh = obj.children[0];
             mesh.material = new THREE.MeshPhongMaterial({
-                color: "#aaa",
+                color: "#999",
                 transparent: true,
                 side: THREE.DoubleSide,
                 clipIntersection: true,
             });
-            mesh.scale.set(4, 4, 3);
+            mesh.scale.set(4, 4, 4);
             mesh.code = "1";
             mesh.name = "城池";
             mesh.position.y= 0;
@@ -415,33 +415,11 @@
     var line2= new THREE.Object3D();
     for (var k=0;k<50;k++) {
         if (k % 2 === 0) {
-            createLine2(141 - (k % 3),(5 * k),141 - (k % 3),(5 * k) + 4,240,-240)
-            createLines(-20*k,-400-(k%3),-(20*k)+4,-400-(k%3),100,-400)
-            createLines(-4*k,-235-(k%3),-(4*k)+4,-235-(k%3),200,-200)
-            createLines(-800-(4*k),-(k%3),-800-(4*k)+4,-(k%3),-0,-300)
-            createLines(-20*k,400-(k%3),-(20*k)+4,400-(k%3),100,-400)
-            createLines(-20*k,250-(k%3),-(20*k)+4,250-(k%3),-50,-400)
-            createLine2(-485 - (k % 3),(5 * k),-485 - (k % 3),(5 * k) + 4,180,-300)
-            createLine2(-40 - (k % 3),(5 * k),-40 - (k % 3),(5 * k) + 4,20,-230)
-            createLine2(-1300 - (k % 3),(5 * k),-1300 - (k % 3),(5 * k) + 4,20,-230)
-            createLine2(-1070 - (k % 3),(5 * k),-1070 - (k % 3),(5 * k) + 4,20,-230)
-            createLine2(-705 - (k % 3),(5 * k),-705 - (k % 3),(5 * k) + 4,20,-230)
-            createLine2(-800 - (k % 3),(5 * k),-800 - (k % 3),(5 * k) + 4,20,-230)
-            createLine2(-120 - (k % 3),(2 * k),-120 - (k % 3),(2 * k) + 4,20,-230)
+            createLine2(0 - (k % 3),(5 * k),0 - (k % 3),(5 * k) + 4,240,0)
+
         } else {
-            createLine2(141+ (k % 3),-(5 * k),141 + (k % 3),-(5 * k) - 4,240,-240)
-            createLines(-20*k,-400+(k%3),-(20*k)+4,-400+(k%3),100,-400)
-            createLines(-4*k,-235+(k%3),-(4*k)+4,-235+(k%3),200,-200)
-            createLines(-20*k,400+(k%3),-(20*k)+4,400+(k%3),100,-400)
-            createLines(-20*k,250+(k%3),-(20*k)+4,250+(k%3),-50,-400)
-            createLines(-800-(4*k),(k%3),-800-(4*k)+4,(k%3),-0,-300)
-            createLine2(-485 + (k % 3),(5 * k),-485 + (k % 3),(5 * k) + 4,80,-300)
-            createLine2(-120 + (k % 3),(2 * k),-120 + (k % 3),(2 * k) + 4,80,-300)
-            createLine2(-40 + (k % 3),(5 * k),-40 + (k % 3),(5 * k) + 4,20,-230)
-            createLine2(-1300 + (k % 3),(5 * k),-1300 + (k % 3),(5 * k) + 4,180,-300)
-            createLine2(-1070 + (k % 3),(5 * k),-1070 + (k % 3),(5 * k) + 4,180,-300)
-            createLine2(-705 + (k % 3),(5 * k),-705 + (k % 3),(5 * k) + 4,180,-300)
-            createLine2(-800 + (k % 3),(5 * k),-800 + (k % 3),(5 * k) + 4,180,-300)
+            createLine2( (k % 3),-(5 * k),  (k % 3),-(5 * k) - 4,240,0)
+
         }
     }
     function createLine2(x1,z1,x2,z2,s,e) {
